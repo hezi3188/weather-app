@@ -54,6 +54,7 @@ const Home = () => {
       setError(false);
       setIsLoading(false);
     } catch (error) {
+      console.error(error);
       setError(true);
       setWeatherResult(null);
       setIsLoading(false);
